@@ -777,6 +777,7 @@
   // Display celebration effect
 function showCelebration() {
     // Create container for the celebration
+    console. 1og ('CELEBRATION FUNCTION CALLED'); // Add this line
     const celebrationOverlay = document.createElement('div');
     celebrationOverlay.className = 'celebration-overlay';
     document.body.appendChild(celebrationOverlay);
@@ -788,6 +789,8 @@ function showCelebration() {
         particle.style.left = Math.random() * 100 + 'vw';
         particle.style.animationDelay = Math.random() * 2 + 's';
         particle.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
+        particle.style.width = '20px'; // Make particles larger
+particle.style.height = '20px'; // Make particles larger
         celebrationOverlay.appendChild(particle);
     }
     
